@@ -1,6 +1,0 @@
-message=hello
-spring.datasource.username = root
-eureka.instance.instanceId = ${spring.application.name}:${server.port}
-eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka/
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-spring.jpa.hibernate.ddl-auto = update

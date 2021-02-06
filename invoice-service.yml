@@ -1,0 +1,30 @@
+
+server:
+  port : 8082
+spring:
+  datasource:
+    username : root 
+    password :
+    url : jdbc:mysql://localhost:3306/invoice_database?serverTimezone=UTC
+   
+    
+  jpa:
+    properties:
+      hibernate:
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect 
+        ddl-auto : update
+    
+eureka:
+  instance:
+    instanceId : ${spring.application.name}:${server.port} 
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8761/eureka/
+      
+      
+info:
+  app:
+    name : invoice-service
+    description : Invoice service to fetch invoice details.
+      
+      

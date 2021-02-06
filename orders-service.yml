@@ -1,6 +1,6 @@
 
 server:
-  port : 8081
+  port : 8081 
 spring:
   datasource:
     username : root 
@@ -24,7 +24,7 @@ eureka:
       
 info:
   app:
-    name : orderprocessing-service
+    name : orders-service
     description : order prgocessin service to fetch order details.
       
       
